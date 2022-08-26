@@ -2,7 +2,7 @@ CREATE DATABASE webhosting
 
 
 CREATE TABLE website (
-    id int NOT NULL,
+    id int NOT NULL AUTO_INCREMENT,
     domain varchar(255) NOT NULL,
     creationdate int NOT NULL,
     description text NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE client_website (
 
 );
 CREATE TABLE category (
-    id int NOT NULL,
+    id int NOT NULL AUTO_INCREMENT,
     name varchar(255) NOT NULL,
     description text NOT NULL,
     PRIMARY KEY (id)
