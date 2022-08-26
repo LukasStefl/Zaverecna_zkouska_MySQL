@@ -102,3 +102,5 @@ VALUES (5,1);
 INSERT INTO corder_item
 VALUES (5,6);
 
+SELECT customer.id, customer.forename, customer.surname, customer.email, customer.telnumber FROM customer
+JOIN corder AS cor ON cor.customer_id=customer.id;
