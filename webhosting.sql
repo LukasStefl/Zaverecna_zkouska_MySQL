@@ -29,7 +29,12 @@ CREATE TABLE client_website (
     FOREIGN KEY (website_id) REFERENCES website(id)
 
 );
-
+CREATE TABLE category (
+    id int NOT NULL,
+    name varchar(255) NOT NULL,
+    description text NOT NULL,
+    PRIMARY KEY (id)
+);
 INSERT INTO category
 VALUES (1, 'informativni prohlizeci stranka', 'Vyhledavani, e-mail, novinky, mapy, zpravodajstvi, televize');
 INSERT INTO category
