@@ -24,7 +24,7 @@ CREATE TABLE corder (
 
 
 CREATE TABLE item (
-    id int NOT NULL,
+    id int NOT NULL AUTO_INCREMENT,
     name varchar(255) NOT NULL,
     creationdate int NOT NULL,
     shortdescription tinytext NOT NULL,
