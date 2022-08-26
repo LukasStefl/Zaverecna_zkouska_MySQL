@@ -64,3 +64,9 @@ INSERT INTO client
 VALUES (4, 'Ales_Zavoral', 'Spravce serveru Alza.cz' , 2002-5-31);
 INSERT INTO client
 VALUES (5, 'Romana_Bukovska', 'Spravce serveru uzlabina.cz' , 2022-2-28);
+
+SELECT website.id, category_id FROM website
+JOIN client_website AS cl_web ON cl_web.website_id=website.id;
+
+SELECT website.id, category_id FROM website 
+JOIN category AS cat ON website.category_id=cat.id;
