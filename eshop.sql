@@ -1,6 +1,6 @@
 CREATE DATABASE eshop;
 
-CREATE TABLE 'customer' (
+CREATE TABLE customer (
     id int NOT NULL AUTO_INCREMENT,
     forename varchar(255) NOT NULL,
     surname varchar(255) NOT NULL,
